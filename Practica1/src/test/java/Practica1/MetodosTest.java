@@ -36,21 +36,21 @@ public class MetodosTest {
     public void tearDown() throws Exception {
     }
     
-    @BeforeAll
-    public static void setUpClass() {
-    }
-    
-    @AfterAll
-    public static void tearDownClass() {
-    }
-    
-    @BeforeEach
-    public void setUp() {
-    }
-    
-    @AfterEach
-    public void tearDown() {
-    }
+//    @BeforeAll
+//    public static void setUpClass() {
+//    }
+//    
+//    @AfterAll
+//    public static void tearDownClass() {
+//    }
+//    
+//    @BeforeEach
+//    public void setUp() {
+//    }
+//    
+//    @AfterEach
+//    public void tearDown() {
+//    }
 
     /**
      * Test of clasificacion method, of class Metodos.
@@ -58,12 +58,13 @@ public class MetodosTest {
     @org.junit.jupiter.api.Test
     public void testClasificacion() {
         System.out.println("clasificacion");
-        String tipo = "";
+        String tipo = "niños";
         Metodos instance = new Metodos();
-        String expResult = "";
+        String expResult = "E Todo el publico";
         String result = instance.clasificacion(tipo);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
+        if(!result.equals(expResult))
         fail("The test case is a prototype.");
     }
 
@@ -73,12 +74,13 @@ public class MetodosTest {
     @org.junit.jupiter.api.Test
     public void testPrecioenvio() {
         System.out.println("precioenvio");
-        double precio = 0.0;
+        double precio = 300.0;
         Metodos instance = new Metodos();
-        double expResult = 0.0;
+        double expResult = 399.0;
         double result = instance.precioenvio(precio);
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
+        if(result !=expResult)
         fail("The test case is a prototype.");
     }
     
