@@ -25,6 +25,16 @@ public class Practica1 {
         System.out.println("Ingrese el precio del juego");
         precio = in.nextDouble();
         Metodos met = new Metodos();
+        clasificacion = met.clasificacion(publico);
+        total = met.precioenvio(precio);  
+        System.out.println();
+        System.out.println("----------------------------------");
+        System.out.println("Los datos de su juego son:");
+        
+        System.out.println("Titulo: "+nombre);
+        System.out.println("Clasificacion: "+clasificacion);
+        System.out.println("Precio total: "+total);
+        System.out.println("------------------------------------");
         
     }
 }
