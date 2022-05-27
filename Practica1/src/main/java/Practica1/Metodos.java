@@ -9,17 +9,23 @@ public class Metodos {
     public String clasificacion(String tipo){
         String clasificacion = "";
         
-        if(tipo.equals("niños")){
-            clasificacion = "E Todo el publico";
-        }else if(tipo.equals("Jovenes")){
-            clasificacion = "T adolescentes";
-        }else if(tipo.equals("Mayores de edad")){
-            clasificacion = "M mayores";
-        }else if(tipo.equals("Adultos")){
-            clasificacion = "A adultos";
-        }else{
-            clasificacion = "RP Pendientes";
-    }
+        switch (tipo) {
+            case "niños":
+                clasificacion = "E Todo el publico";
+                break;
+            case "Jovenes":
+                clasificacion = "T adolescentes";
+                break;
+            case "Mayores de edad":
+                clasificacion = "M mayores";
+                break;
+            case "Adultos":
+                clasificacion = "A adultos";
+                break;
+            default:
+                clasificacion = "RP Pendientes";
+                break;
+        }
         
         return clasificacion;
     
@@ -33,7 +39,7 @@ public class Metodos {
         return costo;
     }
     
-}
+    }
     
     
     
