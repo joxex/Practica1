@@ -24,8 +24,16 @@ public class Metodos {
         return clasificacion;
     
     }
+    public double precioenvio(double precio){
+        double costo,impuesto,ganancia;
+        impuesto = precio * 0.12;
+        ganancia = precio * 0.21;
+        
+        costo = precio+impuesto+ganancia;
+        return costo;
+    }
     
-    
+}
     
     
     
